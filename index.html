@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Mobile Online</title>
+    <style>
+        /* Resetando algumas margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #7c4caf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Seção de jogos */
+        #jogos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .jogo {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+
+        .jogo h3 {
+            color: #9e5bd0;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #864caf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #5a2d7a;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jogos Mobile Online</h1>
+        <p>Descubra os melhores jogos mobile para jogar online!</p>
+    </header>
+    
+    <section id="jogos">
+        <h2>Jogos Populares</h2>
+        <div class="jogo" id="jogo1">
+            <h3>Clash Royale</h3>
+            <p>Jogo de estratégia em tempo real, com batalhas online.</p>
+            <button onclick="jogar('Clash Royale')">Jogar Agora</button>
+        </div>
+        <div class="jogo" id="jogo2">
+            <h3>Among Us</h3>
+            <p>Jogo de dedução social onde você joga com amigos.</p>
+            <button onclick="jogar('Among Us')">Jogar Agora</button>
+        </div>
+        <div class="jogo" id="jogo3">
+            <h3>League of Legends: Wild Rift</h3>
+            <p>Versão mobile do famoso jogo de MOBA, com partidas online rápidas.</p>
+            <button onclick="jogar('League of Legends: Wild Rift')">Jogar Agora</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Jogos Mobile Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function jogar(jogo) {
+            alert("Você clicou para jogar: " + jogo + ". Você será redirecionado para a página do jogo.");
+            // Você pode adicionar links reais ou redirecionar para uma página de jogo
+            // Por exemplo: window.location.href = "https://play.google.com/store/apps/details?id=com.supercell.clashroyale";
+        }
+    </script>
+</body>
+</html>
